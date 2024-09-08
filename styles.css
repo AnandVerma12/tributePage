@@ -1,0 +1,266 @@
+@import "bootstrap/scss/utilities/api";
+
+:root {
+  /*color palate from: https://www.materialpalette.com/indigo/pink*/
+  --dark-primary-color: #303F9F;
+  --primary-color: #3F51B5;
+  --light-primary-color: #C5CAE9;
+  --text-icon-color: #FFFFFF;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #BDBDBD;
+  --accent-color: #FF4081;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+
+  font-family: cursive;
+  font-size: 45px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.text-justify {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s e
+}
+.img-dhoni{
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.table-heading {
+  background-color: var(--primary-color);
+  color: var(--text-icon-color);
+}
+
+hr.hr-style {
+  margin-top: 0;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 64, 129), rgba(0, 0, 0, 0));
+}
+
+hr.hr-style-two {
+  margin-top: 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.cover-image {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://dl.dropbox.com/s/dfynkdansigr6u7/cover_mobile.jpg?dl=0) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.cover-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3e456b;
+  opacity: 0.8;
+}
+
+.hero {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.hero-title {
+  font-size: 180px;
+  color: var(--text-icon-color);
+  text-align: center;
+
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.hero-text {
+  color: var(--text-icon-color);
+  text-align: center;
+  /* font: size 1.2rem; */
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+
+
+.dhoni-intro {
+  margin-bottom: 1em;
+  
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+
+.dhoni-title-image {
+  margin-top: 0.2em;
+  filter: drop-shadow(8px 8px 10px rgb(19, 75, 216));
+  mix-blend-mode: multiply;
+  
+}
+
+.dhoni-img2 {
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(8px 8px 10px blue);
+}
+
+.dhoni-timeline {
+  text-align: justify;
+}
+
+.dhoni-timeline ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.timeline{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+.dhoni-timeline #title-desktop {
+  display: none;
+}
+
+.dhoni-timeline #dhoni-wiki-imdb-link p {
+  margin-bottom: 20px;
+}
+
+.dhoni-appreciation {
+  text-align: justify;
+  margin-top: 10px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+hr.hr-style-footer {
+  margin-bottom: 10px;
+  margin-top: 1em;
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+/* All media queries begin here */
+
+@media screen and (min-width: 400px) {
+  .cover-image {
+    background: url(https://dl.dropbox.com/s/qery1jsxvtfsq51/cover_desktop.jpg?dl=0) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+  @media screen and (min-width: 520px) {
+    body {
+      font-size: 18px;
+    }
+
+    /*Keep table contents font size 16px */
+    table {
+      font-size: 16px
+    }
+
+
+    @media screen and (min-width: 768px) {
+      .dhoni-title-image {
+        margin-top: 20px;
+      }
+
+      .dhoni-timeline #title-mobile {
+        display: none;
+      }
+
+      .dhoni-timeline #title-desktop {
+        display: inherit;
+      }
+    }
+
+
+    @media screen and (min-width: 992px) {
+      .hero-title {
+        font-size: 100px;
+      }
+
+      .hero-text {
+        font-size: 50px;
+      }
+
+      .cover-image-2 {
+        background: url(https://dl.dropbox.com/s/8nipacmh6r739wr/cover_desktop_2.jpg?dl=0) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      table {
+        table-layout: auto;
+        word-wrap: normal;
+      }
+    }
+  }
+}  
